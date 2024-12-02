@@ -2,6 +2,8 @@
 #include <vector>
 #include <random>
 #include <string>
+#include <conio.h>
+#include <ctype.h>
 #include "hotelroom.h"
 using namespace std;
 
@@ -48,6 +50,7 @@ void bookRoom(vector <HotelRoom>& rooms)
     cout << "Haluatko valita huoneen numeron? (K/E)";
     cin >> input2; //Lisää syötteen tarkistus
     HotelRoom selectedRoom;
+
     if (input2 == 'K' || input2 == 'k')
     {
         cout << "Saatavilla olevat huoneet: \n";
@@ -57,7 +60,7 @@ void bookRoom(vector <HotelRoom>& rooms)
             {
                 cout << room.roomNumber << '\n';
             }
-            if (room.available && input == 2 && room.size == 2)
+            else if (room.available && input == 2 && room.size == 2)
             {
                 cout << room.roomNumber << '\n';
             }
@@ -65,7 +68,6 @@ void bookRoom(vector <HotelRoom>& rooms)
         
         cout << "Valitse saatavilla oleva huone: ";
         cin >> input;
-
         selectedRoom = rooms[input - 1]; 
     }
     else
@@ -77,7 +79,7 @@ void bookRoom(vector <HotelRoom>& rooms)
             {
                 availableRooms.emplace_back(room);
             }
-            if (room.available && input == 2 && room.size == 2)
+            else if (room.available && input == 2 && room.size == 2)
             {
                 availableRooms.emplace_back(room);
             }
@@ -85,24 +87,75 @@ void bookRoom(vector <HotelRoom>& rooms)
 
         random_device rd;
         default_random_engine generator(rd());
-        uniform_int_distribution<int> distribution(0, availableRooms.size());
-        HotelRoom selectedRoom = availableRooms[distribution(generator)];
-        
-
+        uniform_int_distribution<int> distribution(1, availableRooms.size());
+        selectedRoom = availableRooms[distribution(generator)];   
     }
+
     string inputName;
     cout << "Anna nimesi: \n";
     cin.ignore();
     getline(cin, inputName);
 
-    selectedRoom.available = false;
-    selectedRoom.booker = inputName;
+    // Tilapäinen ratkaisu
+    HotelRoom& SRoom = rooms[selectedRoom.roomNumber-1];
+
+    SRoom.available = false;
+    SRoom.booker = inputName;
 
     random_device rd;
     default_random_engine generator(rd());
     uniform_int_distribution<int> distribution(10000, 99999);
-    selectedRoom.bookingNumber = distribution(generator);
-    
+    SRoom.bookingNumber = distribution(generator);
 
+    cout << "Varasit huoneen " << SRoom.roomNumber << ".\n";
+    cout << "Varausnumerosi on " << SRoom.bookingNumber << ".\n";
+    cout << "Paina mitä tahansa näppäintä jatkaaksesi. ";
+    _getch();
 }
-void findRoom();
+void findRoom(std::vector<HotelRoom>& rooms)
+{
+    string input;
+    cout << "Syötä varausnumero tai varaajan nimi: ";
+    cin.ignore();
+    getline(cin, input);
+    vector<HotelRoom> foundRooms;
+    if (any_of(input.begin(), input.end(), isdigit))
+    {
+        int inputBookingNumber = stoi(input);
+        for (HotelRoom room : rooms)
+        {
+            if (room.bookingNumber == inputBookingNumber)
+            {
+                foundRooms.emplace_back(room);
+                cout << "Olet varannut huoneen " << room.roomNumber <<"\n";
+                cout << "Paina mitä tahansa näppäintä jatkaaksesi.";
+                _getch();
+            }
+        }
+    }
+    else 
+    {
+        for (HotelRoom room : rooms)
+        {
+            if (room.booker == input)
+            {
+                foundRooms.emplace_back(room);
+                cout << "Olet varannut huoneen " << room.roomNumber << "\n";
+            }           
+        }
+    }
+
+    if (foundRooms.empty())
+    {
+        cout << "Varattuja huoneita ei löytynyt. Varmista, että kirjoitit varausnumerosi tai nimesi oikein.\n§";
+    }
+    else
+    {
+        for (HotelRoom room : foundRooms)
+        {
+            cout << "Olet varannut huoneen " << room.roomNumber << "\n";
+        }
+    }
+    cout << "Paina mitä tahansa näppäintä jatkaaksesi.";
+    _getch();
+}

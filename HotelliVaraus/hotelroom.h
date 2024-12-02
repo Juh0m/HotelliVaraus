@@ -12,6 +12,6 @@ public:
 
     std::vector<HotelRoom> generateRooms();
     void bookRoom(std::vector<HotelRoom>& rooms);
-    void findRoom();
+    void findRoom(std::vector <HotelRoom>& rooms);
 
 };
