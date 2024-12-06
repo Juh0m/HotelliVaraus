@@ -4,16 +4,16 @@
 #include <vector>
 #include "hotelroom.h"
 using namespace std;
-
 int main()
 {
     std::vector<HotelRoom> generateRooms();
     void bookRoom(std::vector<HotelRoom>&rooms);
     void findRoom(std::vector<HotelRoom>&rooms);
+    vector<HotelRoom> readRooms();
 
     setlocale(LC_ALL, "fi-FI");
     int input;
-    vector<HotelRoom>rooms;
+    vector<HotelRoom>rooms = readRooms();
     
     while (true)
     {
@@ -23,6 +23,7 @@ int main()
         cout << "Tervetuloa! Mitä haluaisit tehdä?\n";
         cout << "1: Varaa huone" << '\n' << "2: Hae varauksia\n" << "3: Generoi uudet huoneet\n" << "0: Sulje ohjelma";
         cout << "Huoneiden lkm: " << rooms.size() << '\n';
+        
         cin >> input; 
         while (cin.fail() || input >3 || input < 0)
         {
