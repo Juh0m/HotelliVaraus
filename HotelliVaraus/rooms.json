@@ -1,0 +1,562 @@
+[
+  {
+    "available": false,
+    "booker": "Joe Biden",
+    "bookingNumber": 56455,
+    "price": 100.0,
+    "roomNumber": 1,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 2,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 3,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 4,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 5,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 6,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 7,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 8,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 9,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 10,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 11,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 12,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 13,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 14,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 15,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 16,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 17,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 18,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 19,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 20,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 21,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 22,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 23,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 24,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 25,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 26,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 27,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 28,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 29,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 30,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 31,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 32,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 33,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 34,
+    "size": 1
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 100.0,
+    "roomNumber": 35,
+    "size": 1
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 36,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 37,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 38,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 39,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 40,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 41,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 42,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 43,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 44,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 45,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 46,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 47,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 48,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 49,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 50,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 51,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 52,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 53,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 54,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 55,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 56,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 57,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "kix",
+    "bookingNumber": 12389,
+    "price": 150.0,
+    "roomNumber": 58,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 59,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 60,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 61,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 62,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 63,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 64,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 65,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 66,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 67,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 68,
+    "size": 2
+  },
+  {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 69,
+    "size": 2
+  },
+  {
+    "available": false,
+    "booker": "",
+    "bookingNumber": 0,
+    "price": 150.0,
+    "roomNumber": 70,
+    "size": 2
+  }
+]

@@ -4,24 +4,34 @@
 #include <vector>
 #include "hotelroom.h"
 using namespace std;
-
 int main()
 {
     std::vector<HotelRoom> generateRooms();
     void bookRoom(std::vector<HotelRoom>&rooms);
+    void findRoom(std::vector<HotelRoom>&rooms);
+    vector<HotelRoom> readRooms();
 
     setlocale(LC_ALL, "fi-FI");
     int input;
-    vector<HotelRoom>rooms;
+    vector<HotelRoom>rooms = readRooms();
     
     while (true)
     {
+        // P‰‰valikko
+        // K‰ytt‰j‰lt‰ kysyt‰‰n mit‰ h‰n haluaa tehd‰.
         system("cls"); // Ilmeisesti system():n k‰yttˆ‰ pit‰isi v‰ltt‰‰
         cout << "Tervetuloa! Mit‰ haluaisit tehd‰?\n";
-        cout << "1: Varaa huone" << '\n' << "2: Hae varauksia\n" << "3: Generoi uudet huoneet";
+        cout << "1: Varaa huone" << '\n' << "2: Hae varauksia\n" << "3: Generoi uudet huoneet\n" << "0: Sulje ohjelma";
         cout << "Huoneiden lkm: " << rooms.size() << '\n';
-        cin >> input; //Lis‰‰ syˆtteen tarkistus
         
+        cin >> input; 
+        while (cin.fail() || input >3 || input < 0)
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Syˆtteesi oli virheellinen. Syˆt‰ valintasi uudelleen: ";
+            cin >> input;
+        }
         if (input == 0)
         {
             break;
@@ -32,7 +42,7 @@ int main()
             bookRoom(rooms);
             break;
         case 2:
-            
+            findRoom(rooms);
             break;
         case 3:
             rooms = generateRooms();
