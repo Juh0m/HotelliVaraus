@@ -40,8 +40,9 @@ vector<HotelRoom> generateRooms()
 		hotelRoom.available = (isAvailableRNG <= 4) ? false : true; //40% mahdollisuus että huone on jo varattu
 		if (!hotelRoom.available)
 		{
-			string booker = "Matti Varaaja";
+			hotelRoom.booker = "Muu Varaaja";
 		}
+		hotelRoom.nightAmount = 0;
 		hotelRoom.bookingNumber = 0;
 		rooms.emplace_back(hotelRoom);
 	}
@@ -49,33 +50,81 @@ vector<HotelRoom> generateRooms()
 	return rooms;
 }
 
+// Huoneiden varaus
 void bookRoom(vector <HotelRoom>& rooms)
 {
+	HotelRoom selectedRoom;
+	random_device rd;
+	default_random_engine generator(rd());
+
 	int input;
 	char input2;
-	cout << "Haluatko varata huoneen yhdelle (1) vai kahdelle (2) henkilölle?";
-	cin >> input; //Lisää syötteen tarkistus
-	cout << "Haluatko valita huoneen numeron? (K/E)";
-	cin >> input2; //Lisää syötteen tarkistus
-	HotelRoom selectedRoom;
 
+	cout << "Haluatko varata huoneen yhdelle (1) vai kahdelle (2) henkilölle?";
+	cin >> input;
+	// Jos vastaus ei ollut 1 tai 2, kysytään uudelleen
+	while (cin.fail() || input < 1 || input > 2)
+	{
+		cout << "Syötteesi oli virheellinen. Haluatko varata huoneen yhdelle (1) vai kahdelle (2) henkilölle?";
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cin >> input;
+	}
+	cout << "Haluatko valita huoneen numeron? (K/E):";
+	cin >> input2; 
+	while (input2 != 'K' && input2 != 'k' && input2 != 'E' && input2 != 'e')
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Syötteesi oli virheellinen.  Haluatko valita huoneen numeron? (K/E):";
+		cin >> input2;
+	}
+
+	// Käyttäjän huoneen numeron valinta
 	if (input2 == 'K' || input2 == 'k')
 	{
 		cout << "Saatavilla olevat huoneet: \n";
+		vector<HotelRoom> availableRooms;
 		for (HotelRoom& room : rooms)
 		{
 			if (room.available && input == 1 && room.size == 1)
 			{
 				cout << room.roomNumber << '\n';
+				availableRooms.emplace_back(room);
 			}
 			else if (room.available && input == 2 && room.size == 2)
 			{
 				cout << room.roomNumber << '\n';
+				availableRooms.emplace_back(room);
 			}
 		}
 
 		cout << "Valitse saatavilla oleva huone: ";
 		cin >> input;
+
+		// Tämän voisi varmasti tehdä paremmin mutta en ehdi
+		bool roomFound = false;
+		while (!roomFound)
+		{
+			if (cin.fail())
+			{
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			}
+			for (HotelRoom room : availableRooms)
+			{
+				if (room.roomNumber == input)
+				{
+					roomFound = true;
+				}
+			}
+			if (!roomFound)
+			{
+				cout << "Valitsemasi huone ei ole saatavilla. Valitse saatavilla oleva huone: ";
+				cin >> input;
+			}
+		}
+
 		selectedRoom = rooms[input - 1];
 	}
 	else
@@ -93,12 +142,22 @@ void bookRoom(vector <HotelRoom>& rooms)
 			}
 		}
 
-		random_device rd;
-		default_random_engine generator(rd());
 		uniform_int_distribution<int> distribution(1, availableRooms.size());
 		selectedRoom = availableRooms[distribution(generator)];
 	}
 
+	// Raja öiden määrälle, koska ei ole haluttavaa että joku varaisi huoneen miljoonaksi yöksi
+	int nightAmount;
+	cout << "Kuinka moneksi yöksi haluat varata huoneen? (max. 30pv): ";
+	cin >> nightAmount;
+	while(nightAmount >30 || nightAmount <1 || cin.fail())
+	{ 
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Anna öiden määrä väliltä 1-30: ";
+		cin >> nightAmount;
+	}
+	
 	string inputName;
 	cout << "Anna nimesi: \n";
 	cin.ignore();
@@ -106,11 +165,14 @@ void bookRoom(vector <HotelRoom>& rooms)
 
 	HotelRoom& SRoom = rooms[selectedRoom.roomNumber - 1];
 
-	cout << "Huoneen hinta on " << SRoom.price << "\n";
-	cout << "Haluatko varmasti varata huoneen " << SRoom.roomNumber << "? (K/E)\n";
+	// Satunnainen alennus
+	uniform_int_distribution<int> distribution(1, 3);
+	int discount = distribution(generator);
+	int discountMultiplier = (discount == 1?0:discount==2?10:20);
+	SRoom.price = nightAmount * SRoom.price * (100 - discountMultiplier) / 100;
+	cout << "Huoneen hinta " << nightAmount << " yöksi on " << SRoom.price << " euroa\n";
+	cout << "Haluatko varmasti varata huoneen " << SRoom.roomNumber << " " << nightAmount << " yöksi? (K/E)\n";
 	
-	
-
 	string selectionInput;
 	cin >> selectionInput;
 	if (selectionInput != "K" && selectionInput != "k")
@@ -118,13 +180,11 @@ void bookRoom(vector <HotelRoom>& rooms)
 		return;
 	}
 
+	distribution = uniform_int_distribution<int>(10000, 99999);
+	SRoom.bookingNumber = distribution(generator);
 	SRoom.available = false;
 	SRoom.booker = inputName;
-
-	random_device rd;
-	default_random_engine generator(rd());
-	uniform_int_distribution<int> distribution(10000, 99999);
-	SRoom.bookingNumber = distribution(generator);
+	SRoom.nightAmount = nightAmount;
 
 	cout << "Varasit huoneen " << SRoom.roomNumber << ".\n";
 	cout << "Varausnumerosi on " << SRoom.bookingNumber << ".\n";
@@ -149,7 +209,7 @@ void findRoom(std::vector<HotelRoom>& rooms)
 	}
 	// Jos syötteessä on numero, on syötetty varausnumero.
 	// Haetaan siis huone annetulla varausnumerolla.
-	if (any_of(input.begin(), input.end(), isdigit))
+	if (any_of(input.begin(), input.end(), isdigit) && input!= "0")
 	{
 		int inputBookingNumber = stoi(input);
 		for (HotelRoom room : rooms)
@@ -157,7 +217,7 @@ void findRoom(std::vector<HotelRoom>& rooms)
 			if (room.bookingNumber == inputBookingNumber)
 			{
 				foundRooms.emplace_back(room);
-				cout << "Olet varannut huoneen " << room.roomNumber << "\n";
+				cout << "Olet varannut huoneen " << room.roomNumber << " " << room.nightAmount << " yöksi.\n";
 			}
 		}
 	}
@@ -170,7 +230,7 @@ void findRoom(std::vector<HotelRoom>& rooms)
 			if (room.booker == input)
 			{
 				foundRooms.emplace_back(room);
-				cout << "Olet varannut huoneen " << room.roomNumber << "\n";
+				cout << "Olet varannut huoneen " << room.roomNumber << " " << room.nightAmount << " yöksi.\n";
 			}
 		}
 	}
@@ -207,7 +267,9 @@ void to_json(json& j, const HotelRoom& room)
 		{"roomNumber", room.roomNumber},
 		{"available", room.available},
 		{"booker", room.booker},
-		{"bookingNumber", room.bookingNumber} };
+		{"bookingNumber", room.bookingNumber},
+		{"nightAmount", room.nightAmount } };
+
 }
 void from_json(const json& j, HotelRoom& room)
 {
@@ -217,6 +279,7 @@ void from_json(const json& j, HotelRoom& room)
 	j.at("available").get_to(room.available);
 	j.at("booker").get_to(room.booker);
 	j.at("bookingNumber").get_to(room.bookingNumber);
+	j.at("nightAmount").get_to(room.nightAmount);
 }
 
 
