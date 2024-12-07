@@ -1,7 +1,7 @@
 [
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -18,8 +18,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -45,8 +45,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -72,8 +72,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -90,8 +90,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -108,8 +108,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -117,8 +117,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -180,8 +180,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -189,8 +189,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -216,8 +216,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -225,8 +225,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -234,8 +234,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -252,8 +252,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -261,8 +261,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -297,8 +297,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -315,8 +315,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -324,8 +324,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -333,12 +333,21 @@
     "size": 1
   },
   {
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "nightAmount": 0,
+    "price": 100.0,
+    "roomNumber": 38,
+    "size": 1
+  },
+  {
     "available": false,
     "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
-    "roomNumber": 38,
+    "roomNumber": 39,
     "size": 1
   },
   {
@@ -347,21 +356,12 @@
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
-    "roomNumber": 39,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
     "roomNumber": 40,
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -369,8 +369,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -378,8 +378,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -396,8 +396,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -405,8 +405,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -414,8 +414,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -432,8 +432,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -459,8 +459,8 @@
     "size": 1
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -477,8 +477,8 @@
     "size": 1
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
     "price": 100.0,
@@ -499,1754 +499,494 @@
     "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 56,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 57,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 58,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 59,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 60,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 61,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 62,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 63,
-    "size": 1
+    "size": 2
   },
   {
     "available": false,
     "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 64,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 65,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 66,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 67,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 68,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 69,
-    "size": 1
+    "size": 2
   },
   {
     "available": false,
     "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 70,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 71,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 72,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 73,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
+    "available": false,
+    "booker": "kjope",
+    "bookingNumber": 94064,
+    "nightAmount": 12,
+    "price": 1800.0,
     "roomNumber": 74,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 75,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 76,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 77,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 78,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 79,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 80,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 81,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 82,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 83,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 84,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 85,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 86,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 87,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 88,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 89,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "\u0007",
-    "bookingNumber": 10633,
-    "nightAmount": 10,
-    "price": 900.0,
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "nightAmount": 0,
+    "price": 150.0,
     "roomNumber": 90,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 91,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 92,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 93,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 94,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 95,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 96,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 97,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 98,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "joe",
-    "bookingNumber": 82954,
-    "nightAmount": 10,
-    "price": 800.0,
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "nightAmount": 0,
+    "price": 150.0,
     "roomNumber": 99,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "\\xD0",
-    "bookingNumber": 82949,
-    "nightAmount": 5,
-    "price": 450.0,
+    "available": true,
+    "booker": "",
+    "bookingNumber": 0,
+    "nightAmount": 0,
+    "price": 150.0,
     "roomNumber": 100,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 101,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 102,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 103,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 104,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 105,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 106,
-    "size": 1
+    "size": 2
   },
   {
     "available": true,
     "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 107,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 108,
-    "size": 1
+    "size": 2
   },
   {
-    "available": true,
-    "booker": "",
+    "available": false,
+    "booker": "Muu Varaaja",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 109,
-    "size": 1
+    "size": 2
   },
   {
-    "available": false,
-    "booker": "Muu Varaaja",
+    "available": true,
+    "booker": "",
     "bookingNumber": 0,
     "nightAmount": 0,
-    "price": 100.0,
+    "price": 150.0,
     "roomNumber": 110,
-    "size": 1
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 111,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 112,
-    "size": 1
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 113,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "w\u0007w7ƺw\u000b\\",
-    "bookingNumber": 85553,
-    "nightAmount": 2,
-    "price": 180.0,
-    "roomNumber": 114,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 115,
-    "size": 1
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 116,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 117,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 118,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 119,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 120,
-    "size": 1
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 121,
-    "size": 1
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 122,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 123,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 100.0,
-    "roomNumber": 124,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "--20",
-    "bookingNumber": 63786,
-    "nightAmount": 22,
-    "price": 1980.0,
-    "roomNumber": 125,
-    "size": 1
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 126,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 127,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 128,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 129,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 130,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 131,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 132,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 133,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 134,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 135,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 136,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 137,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 138,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 139,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 140,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 141,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 142,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 143,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 144,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 145,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 146,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 147,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 148,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 149,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 150,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 151,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 152,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 153,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 154,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 155,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 156,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 157,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 158,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 159,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 160,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 161,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 162,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 163,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 164,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 165,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 166,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 167,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 168,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 169,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 170,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 171,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 172,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 173,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 174,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 175,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 176,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 177,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 178,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 179,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 180,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 181,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 182,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 183,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 184,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 185,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 186,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 187,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 188,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 189,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 190,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 191,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 192,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 193,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 194,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 195,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 196,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 197,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 198,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 199,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 200,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 201,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 202,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 203,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 204,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 205,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 206,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 207,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 208,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 209,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 210,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 211,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 212,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 213,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 214,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 215,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 216,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 217,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 218,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 219,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 220,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 221,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 222,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 223,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 224,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 225,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 226,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 227,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 228,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 229,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 230,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 231,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 232,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 233,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 234,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 235,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 236,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 237,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 238,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 239,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 240,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 241,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 242,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 243,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 244,
-    "size": 2
-  },
-  {
-    "available": true,
-    "booker": "",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 245,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "bob",
-    "bookingNumber": 79251,
-    "nightAmount": 10,
-    "price": 1500.0,
-    "roomNumber": 246,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 247,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 248,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 249,
-    "size": 2
-  },
-  {
-    "available": false,
-    "booker": "Muu Varaaja",
-    "bookingNumber": 0,
-    "nightAmount": 0,
-    "price": 150.0,
-    "roomNumber": 250,
     "size": 2
   }
 ]

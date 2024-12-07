@@ -9,13 +9,17 @@
 
 using namespace std;
 using json = nlohmann::json;
+
+// Tiedoston käsittelyyn
 void writeRooms(std::vector<HotelRoom>& rooms);
 void from_json(const json& j, HotelRoom& room);
 void to_json(json& j, const HotelRoom& room);
 vector<HotelRoom> readRooms();
 
+// Huoneiden luonti
 vector<HotelRoom> generateRooms()
 {
+	vector<HotelRoom> rooms;
 	random_device rd;
 	default_random_engine generator(rd());
 	// Huoneiden määrä väliltä 40-300. (41 muuttuu numeroksi 40)
@@ -25,19 +29,18 @@ vector<HotelRoom> generateRooms()
 	// Tarkistetaan, että huoneiden määrä on parillinen, jos ei ole parillinen poistetaan yksi huone.
 	numOfRooms = (numOfRooms % 2 == 0) ? numOfRooms : numOfRooms - 1;
 
-	distribution = uniform_int_distribution<int>(1, 10);
-	vector<HotelRoom> rooms;
+	//Huoneiden tietojen täyttö
 	for (int i = 0; i < numOfRooms; i++)
-	{
-		// Huoneiden tietojen täyttö
-
+	{	
 		HotelRoom hotelRoom;
 		// Ensimmäisen puolikkaan huoneet 1 henkilölle, toisen puolen 2 henkilölle 
 		hotelRoom.size = (i < numOfRooms / 2) ? 1 : 2;
 		hotelRoom.price = (hotelRoom.size == 1) ? 100 : 150;
 		hotelRoom.roomNumber = i + 1;
+		// 40% mahdollisuus että huone on jo varattu
+		distribution = uniform_int_distribution<int>(1, 10);
 		int isAvailableRNG = distribution(generator);
-		hotelRoom.available = (isAvailableRNG <= 4) ? false : true; //40% mahdollisuus että huone on jo varattu
+		hotelRoom.available = (isAvailableRNG <= 4) ? false : true; 
 		if (!hotelRoom.available)
 		{
 			hotelRoom.booker = "Muu Varaaja";
@@ -46,6 +49,7 @@ vector<HotelRoom> generateRooms()
 		hotelRoom.bookingNumber = 0;
 		rooms.emplace_back(hotelRoom);
 	}
+	// Huoneiden tietojen täytön jälkeen laitetaan ne json- muodossa tiedostoon
 	writeRooms(rooms);
 	return rooms;
 }
@@ -99,10 +103,21 @@ void bookRoom(vector <HotelRoom>& rooms)
 			}
 		}
 
+		// Jos kaikki huoneet on jo varattu palataan takaisin päävalikkoon
+		if (availableRooms.empty())
+		{
+			cout << "Valitettavasti kaikki huoneemme ovat jo varattuja.";
+			cout << "Paina mitä tahansa näppäintä jatkaaksesi. ";
+			_getch(); //_getch() odottaa että käyttäjä antaa yhden merkin, toimii kätevästi tässä
+			return;
+		}
+
 		cout << "Valitse saatavilla oleva huone: ";
 		cin >> input;
 
-		// Tämän voisi varmasti tehdä paremmin mutta en ehdi
+		// Tämän voisi tehdä paremmin mutta en ehdi
+		// Varmistetaan, että käyttäjän antama huonenumero on saatavilla
+		// Eli jos se löytyy saatavilla olevista huoneista sen voi varata, muuten pyydetään uusi numero
 		bool roomFound = false;
 		while (!roomFound)
 		{
@@ -124,11 +139,13 @@ void bookRoom(vector <HotelRoom>& rooms)
 				cin >> input;
 			}
 		}
-
+		// Jos käyttäjän antama huone on saatavilla
 		selectedRoom = rooms[input - 1];
 	}
+	// Jos käyttäjä vastasi että ei halua itse valita huoneen numeroa, valitaan satunnainen huone
 	else
 	{
+		// Katsotaan mitkä huoneet ovat saatavilla, ja sitten valitaan niistä yksi satunnainen
 		vector<HotelRoom> availableRooms;
 		for (HotelRoom& room : rooms)
 		{
@@ -147,6 +164,7 @@ void bookRoom(vector <HotelRoom>& rooms)
 	}
 
 	// Raja öiden määrälle, koska ei ole haluttavaa että joku varaisi huoneen miljoonaksi yöksi
+	// Maksimimäärän voi nostaa jos haluaa että voi varata pidemmäksi aikaa
 	int nightAmount;
 	cout << "Kuinka moneksi yöksi haluat varata huoneen? (max. 30pv): ";
 	cin >> nightAmount;
@@ -157,22 +175,24 @@ void bookRoom(vector <HotelRoom>& rooms)
 		cout << "Anna öiden määrä väliltä 1-30: ";
 		cin >> nightAmount;
 	}
-	
+
 	string inputName;
 	cout << "Anna nimesi: \n";
 	cin.ignore();
 	getline(cin, inputName);
+	
+	HotelRoom& room = rooms[selectedRoom.roomNumber - 1];
 
-	HotelRoom& SRoom = rooms[selectedRoom.roomNumber - 1];
-
-	// Satunnainen alennus
+	// Satunnainen alennus, 0 10 tai 20 prosenttia
 	uniform_int_distribution<int> distribution(1, 3);
 	int discount = distribution(generator);
 	int discountMultiplier = (discount == 1?0:discount==2?10:20);
-	SRoom.price = nightAmount * SRoom.price * (100 - discountMultiplier) / 100;
-	cout << "Huoneen hinta " << nightAmount << " yöksi on " << SRoom.price << " euroa\n";
-	cout << "Haluatko varmasti varata huoneen " << SRoom.roomNumber << " " << nightAmount << " yöksi? (K/E)\n";
+	// Hinta on öiden määrä kerrottuna hinnalla alennusten jälkeen
+	room.price = nightAmount * room.price * (100 - discountMultiplier) / 100;
+	cout << "Huoneen hinta " << nightAmount << " yöksi on " << room.price << " euroa\n";
+	cout << "Haluatko varmasti varata huoneen " << room.roomNumber << " " << nightAmount << " yöksi? (K/E)\n";
 	
+	// Varauksen varmistus
 	string selectionInput;
 	cin >> selectionInput;
 	if (selectionInput != "K" && selectionInput != "k")
@@ -180,18 +200,24 @@ void bookRoom(vector <HotelRoom>& rooms)
 		return;
 	}
 
+	// Varatun huoneen tietojen muutto
 	distribution = uniform_int_distribution<int>(10000, 99999);
-	SRoom.bookingNumber = distribution(generator);
-	SRoom.available = false;
-	SRoom.booker = inputName;
-	SRoom.nightAmount = nightAmount;
+	room.bookingNumber = distribution(generator);
+	room.available = false;
+	room.booker = inputName;
+	room.nightAmount = nightAmount;
 
-	cout << "Varasit huoneen " << SRoom.roomNumber << ".\n";
-	cout << "Varausnumerosi on " << SRoom.bookingNumber << ".\n";
+	cout << "Varasit huoneen " << room.roomNumber << ".\n";
+	cout << "Varausnumerosi on " << room.bookingNumber << ".\n";
+	// Päivitetään huonetiedot tiedostoon
 	writeRooms(rooms);
 	cout << "Paina mitä tahansa näppäintä jatkaaksesi. ";
 	_getch();
 }
+
+// Varattujen huoneiden katsominen
+// Huoneita voi hakea joko varausnumerolla tai varaajan nimellä
+// Jos käyttäjän syötteessä on numero, oletetaan että kyseessä on varausnumero, muuten oletetaan että on varaajan nimi
 void findRoom(std::vector<HotelRoom>& rooms)
 {
 	string input;
@@ -199,6 +225,7 @@ void findRoom(std::vector<HotelRoom>& rooms)
 	cin.ignore();
 	getline(cin, input);
 
+	// Tämä vektori on olemassa jotta voimme kertoa käyttäjälle jos mitään huonetta ei löytynyt (jos tämä on tyhjä)
 	vector<HotelRoom> foundRooms;
 
 	while (input.empty())
@@ -207,8 +234,8 @@ void findRoom(std::vector<HotelRoom>& rooms)
 		cin.ignore();
 		getline(cin, input);
 	}
-	// Jos syötteessä on numero, on syötetty varausnumero.
-	// Haetaan siis huone annetulla varausnumerolla.
+
+	// Varausnumero
 	if (any_of(input.begin(), input.end(), isdigit) && input!= "0")
 	{
 		int inputBookingNumber = stoi(input);
@@ -244,14 +271,17 @@ void findRoom(std::vector<HotelRoom>& rooms)
 	_getch();
 }
 
+// json-huonetiedostosta luku
 vector<HotelRoom> readRooms()
 {
+	// Muunnetaan luettu json hotellihuonevektoriksi
 	ifstream inputFile("rooms.json");
 	json roomJson = json::parse(inputFile);
 	auto rooms = roomJson.template get<vector<HotelRoom>>();
 	return rooms;
 }
-void writeRooms(std::vector<HotelRoom>& rooms)
+// json-huonetiedostoon kirjoittaminen
+void writeRooms(vector<HotelRoom>& rooms)
 {
 	json roomJson = rooms;
 	ofstream outputFile;
@@ -261,6 +291,7 @@ void writeRooms(std::vector<HotelRoom>& rooms)
 }
 void to_json(json& j, const HotelRoom& room)
 {
+	// Hotellihuoneen muunto jsoniksi
 	j = json{
 		{"price", room.price},
 		{"size", room.size},
@@ -273,6 +304,7 @@ void to_json(json& j, const HotelRoom& room)
 }
 void from_json(const json& j, HotelRoom& room)
 {
+	// jsonista muunto hotellihuoneeksi
 	j.at("price").get_to(room.price);
 	j.at("size").get_to(room.size);
 	j.at("roomNumber").get_to(room.roomNumber);
