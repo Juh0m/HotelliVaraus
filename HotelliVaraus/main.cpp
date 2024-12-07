@@ -10,19 +10,28 @@ int main()
     void bookRoom(std::vector<HotelRoom>&rooms);
     void findRoom(std::vector<HotelRoom>&rooms);
     vector<HotelRoom> readRooms();
-
+    vector<HotelRoom>rooms;
     setlocale(LC_ALL, "fi-FI");
     int input;
-    vector<HotelRoom>rooms = readRooms();
+    // Huoneiden tietojen luku tiedostosta
+    // Jos tiedosto on tyhj‰ tai virheellinen, varmistetaan ettei ohjelma kaadu
+    try
+    {
+        rooms = readRooms();
+    }
+    catch(exception e)
+    {
+        
+    }
     
     while (true)
     {
         // P‰‰valikko
         // K‰ytt‰j‰lt‰ kysyt‰‰n mit‰ h‰n haluaa tehd‰.
-        system("cls"); // Ilmeisesti system():n k‰yttˆ‰ pit‰isi v‰ltt‰‰
+        system("cls");
         cout << "Tervetuloa! Mit‰ haluaisit tehd‰?\n";
         cout << "1: Varaa huone" << '\n' << "2: Hae varauksia\n" << "3: Generoi uudet huoneet\n" << "0: Sulje ohjelma";
-        cout << "Huoneiden lkm: " << rooms.size() << '\n';
+        cout << "\nHuoneiden m‰‰r‰: " << rooms.size() << '\n';
         
         cin >> input; 
         while (cin.fail() || input >3 || input < 0)
@@ -32,6 +41,7 @@ int main()
             cout << "Syˆtteesi oli virheellinen. Syˆt‰ valintasi uudelleen: ";
             cin >> input;
         }
+        // Suljetaan ohjelma l‰htem‰ll‰ while- loopista.
         if (input == 0)
         {
             break;
